@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Responsive landing page with a fixed, interactive navigation bar."/>
+  <title>PRODIGY WD Task 01 - Responsive Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="site-header" class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="homepage">
+        <img src="assets/img/logo.png" alt="Brand Logo" class="logo-img">
+        <span>Brand<span class="dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul id="primary-menu" class="menu">
+        <li><a href="#home" class="nav-link active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#features" class="nav-link"><i class="fa fa-star"></i> Features</a></li>
+        <li><a href="#pricing" class="nav-link"><i class="fa fa-tags"></i> Pricing</a></li>
+        <li><a href="#about" class="nav-link"><i class="fa fa-info-circle"></i> About</a></li>
+        <li><a href="#contact" class="nav-link btn btn-cta"><i class="fa fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="home" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>
+          <span class="red">Build</span>
+          <span class="blue">Learn</span>
+          <span class="cyan">Ship</span>
+        </h1>
+        <p>
+          Welcome to <strong>Brand</strong> — a modern, responsive landing page with a fixed, interactive navbar.<br>
+          Experience smooth navigation, beautiful gradients, and professional design.
+        </p>
+        <a href="#features" class="btn">Explore Features</a>
+      </div>
+      <img src="assets/img/hero-illustration.svg" alt="Landing Illustration" class="hero-img">
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section container">
+      <h2><i class="fa fa-star"></i> Features</h2>
+      <div class="cards">
+        <div class="card">
+          <h3><i class="fa fa-mobile"></i> Responsive Design</h3>
+          <p>Looks great on all devices, from mobile to desktop.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa fa-magic"></i> Interactive Navbar</h3>
+          <p>Navbar changes style on scroll and hover for a dynamic feel.</p>
+        </div>
+        <div class="card">
+          <h3><i class="fa fa-bolt"></i> Smooth Interactions</h3>
+          <p>Transitions and effects for a delightful user experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section container">
+      <h2><i class="fa fa-tags"></i> Pricing</h2>
+      <div class="cards pricing">
+        <div class="card starter">
+          <h3>Starter</h3>
+          <p>Free<br><span class="price">$0</span></p>
+        </div>
+        <div class="card pro">
+          <h3>Pro</h3>
+          <p>Advanced features<br><span class="price">$19</span>/mo</p>
+        </div>
+        <div class="card enterprise">
+          <h3>Enterprise</h3>
+          <p>Custom solutions<br><span class="price">Contact</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2><i class="fa fa-info-circle"></i> About</h2>
+      <p>
+        <strong>Brand</strong> is a sample landing page built for internship demonstration.<br>
+        It showcases interactive navigation, modern layout, and accessibility best practices.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2><i class="fa fa-envelope"></i> Contact</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn-cta">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Brand. All rights reserved.
+        <span class="socials">
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
